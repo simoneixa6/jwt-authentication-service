@@ -9,7 +9,7 @@ using System.Collections.Generic;
 namespace jwt_authentication_service.Controllers
 {
     [ApiController]
-    [Route("authenticate")]
+    [Route("authentication")]
     public class UsersController : ControllerBase
     {
         private readonly UserService _userService;
