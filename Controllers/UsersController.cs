@@ -17,6 +17,11 @@ namespace jwt_authentication_service.Controllers
         public UsersController(UserService userService)
         {
             _userService = userService;
+
+            User user = new User();
+            user.username = "simon";
+            user.password = "bonjour";
+            _userService.Create(user);
         }
 
         [Authorize]
